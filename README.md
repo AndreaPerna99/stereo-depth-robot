@@ -4,11 +4,6 @@
 Stereo vision pipeline for real-time 3D obstacle detection and autonomous robot navigation using disparity estimation and depth reconstruction.
 
 ---
-## 📌 Project Info
-- 🎓 Course: Image Processing and Computer Vision
-- 🏫 University of Bologna
-- 📅 Year: 2025
----
 
 ## 🧠 About the Project
 
@@ -16,10 +11,10 @@ This project focuses on **stereo vision-based depth estimation** for obstacle-aw
 
 Developed for the final project in **Image Processing and Computer Vision** (2025), the system allows:
 
-- Real-time 3D reconstruction using stereo cameras
-- Safety alerts for obstacle proximity
-- Accurate depth mapping and dimensioning
-- Interactive calibration and validation with Python & OpenCV
+- Real-time 3D reconstruction using stereo cameras  
+- Safety alerts for obstacle proximity  
+- Accurate depth mapping and dimensioning  
+- Interactive calibration and validation with Python & OpenCV  
 
 ---
 
@@ -27,78 +22,79 @@ Developed for the final project in **Image Processing and Computer Vision** (202
 
 ```
 📦 3d-stereo-depth-ipcv/
-├── 📁 project_images/                        # Plots and visualizations
-│   ├── 📸 depth_estimation_sgbm.png          # Dense disparity using SGBM
-│   ├── 📸 sparse_chessboard_depth.png        # Sparse depth from chessboard
-│   ├── 📸 keypoints_overlay.png              # Keypoints and detection
-│   └── 📸 robot_3d_view.png                  # 3D obstacle positioning
-├── 📁 robot-navigation-video/               # Output video samples
-│   ├── 🎥 output_video_final_Keypoints.avi
-│   └── 🎥 output_video_final_SGBM.avi
-├── 💻 IPCV_Project_Andrea_Perna.ipynb       # Full interactive notebook
-├── 💻 IPCV_Project_Andrea_Perna.pdf         # Notebook output PDF
-├── 💻 IPCV_Project_Andrea_Perna.html        # HTML export of notebook
-├── 💻 Robot_Navigation_Project.pdf          # Project documentation
-├── 💻 Project_Outcomes/                     # Evaluation & test results
-├── 💻 robot_nav_pointcloud.ply              # Point cloud output
-└── 📄 README.md                              # You are here!
+├ 📁 images/                            # Selected result visualizations
+│ ├ 📸 depth_map.png                    # Grayscale disparity/depth map
+│ ├ 📸 point_cloud.png                  # 3D reconstruction from disparity
+│ └ 📸 SGBM.png                         # Semi-Global Block Matching result
+├ 📁 robot-navigation-video/            # Output video samples
+│ ├ 🎥 output_video_final_Keypoints.avi
+│ └ 🎥 output_video_final_SGBM.avi
+│ └ 🎥 robotL.avi
+│ └ 🎥 robotR.avi
+├ 💻 IPCV_Project_Andrea_Perna.ipynb    # Full interactive notebook
+├ 💻 IPCV_Project_Andrea_Perna.pdf      # Notebook output PDF
+├ 💻 IPCV_Project_Andrea_Perna.html     # HTML export of notebook
+├ 💻 Robot_Navigation_Project.pdf       # Project documentation
+├ 💻 Project_Outcomes/                  # Evaluation & test results
+├ 💻 robot_nav_pointcloud.ply           # Point cloud output
+└ 📄 README.md                          # You are here!
 ```
 
 ---
 
 ## ⚙️ How to Run
 
-1. Open the main notebook:
+1. Open the notebook:
 
 ```bash
 $ jupyter notebook IPCV_Project_Andrea_Perna.ipynb
 ```
 
-2. Run each section in order to visualize:
-   - Stereo calibration (intrinsics/extrinsics)
-   - Disparity map generation (SGBM or sparse)
-   - Depth reconstruction and 3D visualization
-   - Obstacle warnings based on thresholding
+2. Execute all cells in order to:
+   - Calibrate stereo camera system  
+   - Compute disparity using SGBM or chessboard  
+   - Reconstruct 3D space  
+   - Estimate distances and generate alerts  
 
-3. Use the point cloud `.ply` file in [MeshLab](https://www.meshlab.net/) or similar tools to inspect 3D scenes.
+3. To inspect the generated point cloud:
+
+```bash
+$ meshlab robot_nav_pointcloud.ply
+```
 
 ---
 
 ## 📷 Visual Outputs
 
 <p float="left">
-  <img src="./images/depth_estimation_sgbm.png" width="250"/>
-  <img src="./images/sparse_chessboard_depth.png" width="250"/>
-  <img src="./images/keypoints_overlay.png" width="250"/>
+  <img src="./images/depth_map.png" width="260"/>
+  <img src="./images/SGBM.png" width="260"/>
+  <img src="./images/point_cloud.png" width="260"/>
 </p>
-
-<p float="left">
-  <img src="./images/robot_3d_view.png" width="300"/>
-</p>
-
-🎥 Output Videos (in `/robot-navigation-video/`):
-- `output_video_final_Keypoints.avi`
-- `output_video_final_SGBM.avi`
 
 ---
 
 ## 🔍 Technical Highlights
 
-- **Calibration**: Stereo camera parameters estimated via chessboard detection (OpenCV)
-- **Depth from Disparity**: 
-  - Dense method using OpenCV SGBM
-  - Sparse method using triangulated corner points
-- **Safety Mechanism**: Alerts if nearest object < 0.8m
-- **Real-Time Capable**: Optimized frame-by-frame processing for live integration
+- **Stereo Calibration**: OpenCV chessboard-based detection  
+- **Depth Estimation**: SGBM (dense) and triangulated matching (sparse)  
+- **Point Cloud**: Generated and exported as `.ply`  
+- **Real-Time Navigation**: Frame-based safety alerting  
 
 ---
 
 ## 📊 Evaluation & Output
 
-- Disparity error analysis  
-- Point cloud visualization  
-- Keypoint matching validation  
-- Comparison of dense vs sparse results
+- ✅ 2D and 3D visualizations  
+- 🔍 Depth accuracy vs obstacles  
+- 🛑 Obstacle proximity alerts  
+- 🎞️ Output videos from live camera stream  
+
+---
+
+## 📅 Year
+
+2025
 
 ---
 
@@ -117,10 +113,10 @@ $ jupyter notebook IPCV_Project_Andrea_Perna.ipynb
 
 ## 📎 Resources
 
-- [📘 Project Report (PDF)](./Robot_Navigation_Project.pdf)
-- [📄 Notebook Output (PDF)](./IPCV_Project_Andrea_Perna.pdf)
-- [📦 Point Cloud](./robot_nav_pointcloud.ply)
-- 🎞️ Videos available in `robot-navigation-video/`
+- [📘 Project Report (PDF)](./Robot_Navigation_Project.pdf)  
+- [📄 Notebook Output (PDF)](./IPCV_Project_Andrea_Perna.pdf)  
+- [🎥 Videos](./robot-navigation-video/)  
+- [🔵 Point Cloud (PLY)](./robot_nav_pointcloud.ply)  
 
 ---
 
