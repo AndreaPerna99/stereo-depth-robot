@@ -102,12 +102,6 @@ $ jupyter notebook IPCV_Project_Andrea_Perna.ipynb
 
 ---
 
-## 📅 Year
-
-2025
-
----
-
 ## 👨‍🎓 Author
 
 - Andrea Perna  
