@@ -26,6 +26,7 @@ Developed for the final project in **Image Processing and Computer Vision** (202
 │ ├ 📸 depth_map.png                    # Grayscale disparity/depth map
 │ ├ 📸 point_cloud.png                  # 3D reconstruction from disparity
 │ └ 📸 SGBM.png                         # Semi-Global Block Matching result
+│ └ 📸 alarm.png                        # Alarm message
 ├ 📁 robot-navigation-video/            # Output video samples
 │ ├ 🎥 output_video_final_Keypoints.avi
 │ └ 🎥 output_video_final_SGBM.avi
@@ -68,6 +69,7 @@ $ meshlab robot_nav_pointcloud.ply
 
 <p float="left">
   <img src="./Images/depth_map.png" width="260"/>
+  <img src="./Images/alarm.png" width="260"/>
   <img src="./Images/SGBM.png" width="260"/>
   <img src="./Images/point_cloud.png" width="260"/>
 </p>
