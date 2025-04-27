@@ -31,8 +31,8 @@ Developed for the final project in **Image Processing and Computer Vision** (202
 │ └ 📸 left_dataset.png                 # Project dataset
 ├ 📁 robot-navigation-video/            # Output video samples
 │ ├ 🎥 output_video_final_Keypoints.avi
-│ └ 🎥 output_video_final_SGBM.avi
-│ └ 🎥 robotL.avi
+│ ├ 🎥 output_video_final_SGBM.avi
+│ ├ 🎥 robotL.avi
 │ └ 🎥 robotR.avi
 ├ 💻 IPCV_Project_Andrea_Perna.ipynb    # Full interactive notebook
 ├ 💻 IPCV_Project_Andrea_Perna.pdf      # Notebook output PDF
