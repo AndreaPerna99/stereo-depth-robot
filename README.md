@@ -22,7 +22,7 @@ Developed for the final project in **Image Processing and Computer Vision** (202
 
 ```
 📦 3d-stereo-depth-ipcv/
-├ 📁 images/                            # Selected result visualizations
+├ 📁 Images/                            # Selected result visualizations
 │ ├ 📸 depth_map.png                    # Grayscale disparity/depth map
 │ ├ 📸 point_cloud.png                  # 3D reconstruction from disparity
 │ └ 📸 SGBM.png                         # Semi-Global Block Matching result
@@ -67,9 +67,9 @@ $ meshlab robot_nav_pointcloud.ply
 ## 📷 Visual Outputs
 
 <p float="left">
-  <img src="./images/depth_map.png" width="260"/>
-  <img src="./images/SGBM.png" width="260"/>
-  <img src="./images/point_cloud.png" width="260"/>
+  <img src="./Images/depth_map.png" width="260"/>
+  <img src="./Images/SGBM.png" width="260"/>
+  <img src="./Images/point_cloud.png" width="260"/>
 </p>
 
 ---
