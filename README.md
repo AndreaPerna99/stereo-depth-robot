@@ -28,6 +28,8 @@ Developed for the final project in **Image Processing and Computer Vision** (202
 │ ├ 📸 SGBM.png                         # Semi-Global Block Matching result
 │ ├ 📸 alarm.png                        # Alarm message
 │ ├ 📸 width_comparison.png             # Width estimation comparison
+│ ├ 📸 distance_comparison.png          # Distance comparison result
+│ ├ 📸 angles.png                       # Angles estimation
 │ └ 📸 left_dataset.png                 # Project dataset
 ├ 📁 robot-navigation-video/            # Output video samples
 │ ├ 🎥 output_video_final_Keypoints.avi
@@ -75,7 +77,6 @@ $ meshlab robot_nav_pointcloud.ply
   <img src="./Images/SGBM.png" width="260"/>
   <img src="./Images/point_cloud.png" width="260"/>
   <img src="./Images/left_dataset.png" width="260"/>
-  <img src="./Images/width_comparison.png" width="260"/>
 </p>
 
 ---
@@ -95,6 +96,12 @@ $ meshlab robot_nav_pointcloud.ply
 - 🔍 Depth accuracy vs obstacles  
 - 🛑 Obstacle proximity alerts  
 - 🎞️ Output videos from live camera stream  
+
+<p float="left">
+  <img src="./Images/distance_comparison.png" width="260"/>
+  <img src="./Images/width_comparison.png" width="260"/>
+  <img src="./Images/angles.png" width="260"/>
+</p>
 
 ---
 
